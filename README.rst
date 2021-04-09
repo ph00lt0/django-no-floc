@@ -29,29 +29,13 @@ Add it to your `INSTALLED_APPS`:
 
 .. code-block:: python
 
-    INSTALLED_APPS = (
+    MIDDLEWARE = (
         ...
-        'no_floc.apps.NoFlocConfig',
+        'no_floc.middleware.NoFLoCMiddleware',
         ...
     )
 
-Add django-no-floc's URL patterns:
 
-.. code-block:: python
-
-    from no_floc import urls as no_floc_urls
-
-
-    urlpatterns = [
-        ...
-        url(r'^', include(no_floc_urls)),
-        ...
-    ]
-
-Features
---------
-
-* TODO
 
 Running Tests
 -------------
